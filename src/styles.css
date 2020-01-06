@@ -1,0 +1,211 @@
+body, footer {
+    width: 70%;
+    margin: auto;
+    color: #444444;
+}
+
+header {
+    background-color: gray;
+    padding-top: 7px;
+}
+
+header {
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 40px;
+    color: white;
+    padding-bottom: 7px;
+}
+
+main, footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer {
+    bottom: 0;
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: solid #444444;
+}
+
+strong {
+    font-size: 25px;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#introduction-container {
+    width: 54%;
+}
+
+#image-container {
+    width: 42%;
+}
+
+#introduction-container, #find-more-container, #about-website-container, #resume-container div, #category-container div {
+    border: solid #444444;
+    padding: 10px;
+}
+
+#introduction-container, #find-more-container, #about-website-container, #resume-container div, header, img, #category-container div {
+    border-radius: 10px;
+}
+
+#about-container h2, #find-more-container, header, footer {
+    text-align: center;
+}
+
+@keyframes fromWhite {
+    from {background-color: white;}
+}
+
+#find-more-container:hover {
+    background-color: #e5e5e5;
+    animation-name: fromWhite;
+    animation-duration: 0.8s;
+}
+
+#find-more-container:hover, #resume-container div:hover, #about-website:hover {
+    cursor: pointer;
+}
+
+#find-more-container, #about-website-container, header, #resume-container div, #category-container div {
+    margin-top: 10px;
+}
+
+#about-container p, #find-more-container {
+    font-size: 20px;
+}
+
+#about-website {
+    font-style: italic;
+}
+
+#languages-cat strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#about-website:hover {
+    color: blue;
+}
+
+#resume-container {
+    flex-wrap: wrap;
+}
+
+#resume-container div {
+    width: 30%;
+    height: 230px;
+    text-align: center;
+    line-height: 230px;
+}
+
+#resume-container div {
+    /* color: purple; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#resume-container div {
+    color: purple;
+}
+
+#resume-container div strong {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+@keyframes fromPurpleText {
+    from {color: purple;}
+}
+
+#resume-container div:hover {
+    color: red;
+    animation-name: fromPurpleText;
+    animation-duration: 0.6s;
+}
+
+#education {
+    background-image: url("img/education.png");
+}
+
+#computer-science {
+    background-image: url("img/computer-science.png");
+}
+
+#engineering {
+    background-image: url("img/engineering.jpeg");
+}
+
+#work {
+    background-image: url("img/work.jpg");
+}
+
+#volunteer {
+    background-image: url("img/volunteer.png");
+}
+
+#languages {
+    background-image: url("img/language.png");
+}
+
+#category-container {
+    font-size: 14pt;
+}
+
+/* Mobile devices (portrait) */
+@media only screen and (max-width: 700px) {
+    body {
+        width: 90%;
+    }
+
+    #image-container {
+        width: 50%;
+    }
+
+    #introduction-container {
+        width: 90%;
+        padding: 0px;
+        border: none;
+    }
+
+    .flex-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #introduction-container, #image-container {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #resume-container {
+        flex-direction: row;
+    }
+
+    #resume-container div {
+        width: 40%;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    #resume-container div strong {
+        font-size: 20pt;
+        color: red;
+    }
+}
+
+.hidden {
+    display: none;
+}
