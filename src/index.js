@@ -16,7 +16,7 @@
         show(id("about-website-container"));
         id("find-more-container").removeEventListener("click", toResume);
         id("find-more-container").addEventListener("click", toFrontPage);
-        qs("#find-more-container p").textContent = "Go Back";
+        qs("#find-more-container p").textContent = "Home";
         scrollToTop();
     }
 
