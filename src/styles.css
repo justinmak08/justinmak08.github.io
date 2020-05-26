@@ -5,8 +5,19 @@ body, footer {
 }
 
 header {
-    background-color: gray;
+    background: rgb(21,87,153);
+    background: linear-gradient(120deg, rgba(21,87,153,1) 35%, rgba(21,153,87,1) 100%);;
     padding-top: 7px;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+h2 {
+    color: #159957;
 }
 
 header {
@@ -52,7 +63,7 @@ img {
 }
 
 #introduction-container, #find-more-container, #about-website-container, #resume-container div, #category-container div {
-    border: solid #444444;
+    border: solid #155799;
     padding: 10px;
 }
 
@@ -119,7 +130,7 @@ img {
 }
 
 #resume-container div {
-    color: purple;
+    color: #155799;
     background-size: cover;
     background-position: center;
     transition: all 0.5s ease;
@@ -135,7 +146,7 @@ img {
 }
 
 #resume-container div:hover {
-    color: red;
+    color: #159957;
     animation-name: fromPurpleText;
     /* transform: scale(1.05); */
     transform: translate(0, -7px);
