@@ -133,7 +133,7 @@ img {
     color: #155799;
     background-size: cover;
     background-position: center;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 #resume-container div strong {
@@ -147,6 +147,7 @@ img {
 
 #resume-container div:hover {
     color: #159957;
+    border-color: #159957;
     animation-name: fromPurpleText;
     /* transform: scale(1.05); */
     transform: translate(0, -7px);
