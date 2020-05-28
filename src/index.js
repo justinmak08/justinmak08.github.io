@@ -46,7 +46,7 @@
     function toggleOff() {
         let cards = qsa("#category-container div");
         for (let i = 0; i < cards.length; i++) {
-            hide(cards[i])
+            hide(cards[i]);
         }
         hide(id("category-container"));
         show(id("resume-container"));

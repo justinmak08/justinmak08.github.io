@@ -5,8 +5,8 @@ body, footer {
 }
 
 header {
-    background: rgb(21,87,153);
-    background: linear-gradient(120deg, rgba(21,87,153,1) 35%, rgba(21,153,87,1) 100%);;
+    background: rgb(89,21,153);
+    background: linear-gradient(120deg, rgba(89,21,153,1) 20%, rgba(21,153,87,1) 100%);
     padding-top: 7px;
 }
 
@@ -16,7 +16,7 @@ h1 {
     font-size: 40px;
 }
 
-h2 {
+h2, #resume-container div:hover {
     color: #159957;
 }
 
@@ -63,7 +63,7 @@ img {
 }
 
 #introduction-container, #find-more-container, #about-website-container, #resume-container div, #category-container div {
-    border: solid #155799;
+    border: solid #591599;
     padding: 10px;
 }
 
@@ -71,7 +71,7 @@ img {
     border-radius: 10px;
 }
 
-#about-container h2, #find-more-container, header, footer {
+#about-container h2, #find-more-container, #resume-container, header, footer {
     text-align: center;
 }
 
@@ -103,11 +103,10 @@ img {
 
 #languages-cat strong {
     font-size: 16px;
-    font-weight: bold;
 }
 
 #about-website:hover {
-    color: blue;
+    color: #591599;
 }
 
 #resume-container {
@@ -118,38 +117,25 @@ img {
 #resume-container div {
     width: 30%;
     height: 230px;
-    text-align: center;
     line-height: 230px;
-}
-
-#resume-container div {
-    /* color: purple; */
+    color: #741cc7;
+    transition: all 0.3s ease;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#resume-container div {
-    color: #155799;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-}
-
 #resume-container div strong {
     font-size: 30pt;
-    font-weight: bold;
 }
 
 @keyframes fromPurpleText {
-    from {color: purple;}
+    from {color: #741cc7}
 }
 
 #resume-container div:hover {
-    color: #159957;
     border-color: #159957;
     animation-name: fromPurpleText;
-    /* transform: scale(1.05); */
     transform: translate(0, -7px);
 }
 
@@ -183,7 +169,7 @@ img {
 
 /* Mobile devices (portrait) */
 @media only screen and (max-width: 700px) {
-    body {
+    body, #introduction-container {
         width: 90%;
     }
 
@@ -192,12 +178,11 @@ img {
     }
 
     #introduction-container {
-        width: 90%;
         padding: 0px;
         border: none;
     }
 
-    .flex-container {
+    #about-container {
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -205,10 +190,6 @@ img {
     #introduction-container, #image-container {
         margin-top: 15px;
         margin-bottom: 15px;
-    }
-
-    #resume-container {
-        flex-direction: row;
     }
 
     #resume-container div {
@@ -219,7 +200,6 @@ img {
 
     #resume-container div strong {
         font-size: 20pt;
-        color: red;
     }
 }
 
