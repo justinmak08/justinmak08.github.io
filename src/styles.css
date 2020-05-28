@@ -16,7 +16,11 @@ h1 {
     font-size: 40px;
 }
 
-h2, #resume-container div:hover {
+#find-more-container, #resume-container div {
+    transition: all 0.3s ease;
+}
+
+h2, #find-more-container:hover, #resume-container div:hover {
     color: #159957;
 }
 
@@ -82,7 +86,7 @@ img {
 #find-more-container:hover {
     background-color: #e5e5e5;
     animation-name: fromWhite;
-    animation-duration: 0.8s;
+    animation-duration: 0.3s;
 }
 
 #find-more-container:hover, #resume-container div:hover, #about-website:hover {
@@ -119,7 +123,6 @@ img {
     height: 230px;
     line-height: 230px;
     color: #741cc7;
-    transition: all 0.3s ease;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,9 +137,16 @@ img {
 }
 
 #resume-container div:hover {
-    border-color: #159957;
     animation-name: fromPurpleText;
     transform: translate(0, -7px);
+}
+
+#find-more-container:hover, #resume-container div:hover {
+    border-color: #159957;
+}
+
+#find-more-container:active, #resume-container div:active {
+    border-width: 3px;
 }
 
 #education {
