@@ -92,6 +92,10 @@ img:hover {
     transform: scale(1.2);
 }
 
+img:active {
+    transform: scale(1.35);
+}
+
 @keyframes fromWhite {
     from {background-color: white;}
 }

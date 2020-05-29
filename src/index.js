@@ -93,6 +93,7 @@
         }
     }
 
+    //Courtesy of Lalitheswar
     let roll_on = 0;
     function doBarrelRoll()
     {
