@@ -97,19 +97,18 @@
     function doBarrelRoll()
     {
         document.body.style.msTransform='rotate(360deg)';
-        document.body.style.msTransitionDuration='4s';
+        document.body.style.msTransitionDuration='3s';
         document.body.style.msTransitionProperty='all';
         document.body.style.MozTransform='rotate(360deg)';
-        document.body.style.MozTransitionDuration='4s';
+        document.body.style.MozTransitionDuration='3s';
         document.body.style.MozTransitionProperty='all';
         document.body.style.WebkitTransform='rotate(360deg)';
-        document.body.style.WebkitTransitionDuration='4s';
+        document.body.style.WebkitTransitionDuration='3s';
         document.body.style.WebkitTransitionProperty='all';
         document.body.style.OTransform='rotate(360deg)';
-        document.body.style.OTransitionDuration='4s';
+        document.body.style.OTransitionDuration='3s';
         document.body.style.OTransitionProperty='all';
-        setTimeout("document.body.removeAttribute('style'); roll_on = 0;",4000);
-        setTimeout(reset, 4000);
+        setTimeout(reset, 3000);
     }
 
     function reset() {
