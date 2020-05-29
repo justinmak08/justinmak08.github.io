@@ -93,7 +93,6 @@
         }
     }
 
-    //Courtesy of Lalitheswar
     let roll_on = 0;
     function doBarrelRoll()
     {
@@ -110,15 +109,19 @@
         document.body.style.OTransitionDuration='4s';
         document.body.style.OTransitionProperty='all';
         setTimeout("document.body.removeAttribute('style'); roll_on = 0;",4000);
+        setTimeout(reset, 4000);
+    }
+
+    function reset() {
+        document.body.removeAttribute('style');
+        roll_on = 0;
     }
 
     function startRoll()
     {
-        if (!roll_on)
-        {
+        if (!roll_on) {
             roll_on=1;
             doBarrelRoll();
         }
-        roll_on=0
     }
 })();
