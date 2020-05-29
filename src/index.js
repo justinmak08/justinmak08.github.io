@@ -122,7 +122,7 @@
         if (!roll_on) {
             roll_on=1;
             doBarrelRoll();
-            document.querySelector("#image-container img").src = "src/img/rick.png";
+            document.querySelector("#image-container img").src = "src/img/rick.gif";
         }
     }
 })();
