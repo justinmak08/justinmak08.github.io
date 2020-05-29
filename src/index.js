@@ -123,16 +123,25 @@
             document.querySelector("header").style.WebkitTransitionDuration = '0.5s'
             document.querySelector("header").style.WebkitTransitionProperty='all';
         } else {
-            document.querySelector("header").style.WebkitTransform='rotate(360deg)';
+            document.querySelector("header").style.WebkitTransform='rotate(-360deg)';
             document.querySelector("header").style.WebkitTransitionDuration = '0.5s'
             document.querySelector("header").style.WebkitTransitionProperty='all';
+            document.querySelector("#about-container").style.WebkitTransform='rotate(-360deg)';
+            document.querySelector("#about-container").style.WebkitTransitionDuration = '0.5s'
+            document.querySelector("#about-container").style.WebkitTransitionProperty='all';
         }
         
         if (headerClickCount === 2) {
             headerClickCount  = 0;
+            setTimeout(resetHeaderSpin, 500);
         } else {
             headerClickCount++;
         }
+    }
+
+    function resetHeaderSpin() {
+        document.querySelector("header").removeAttribute("style");
+        document.querySelector("#about-container").removeAttribute("style");
     }
 
     function reset() {
