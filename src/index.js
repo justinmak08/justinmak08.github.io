@@ -114,6 +114,7 @@
     function reset() {
         document.body.removeAttribute('style');
         roll_on = 0;
+        document.querySelector("#image-container img").src = "src/img/profile-picture.png";
     }
 
     function startRoll()
@@ -121,6 +122,7 @@
         if (!roll_on) {
             roll_on=1;
             doBarrelRoll();
+            document.querySelector("#image-container img").src = "src/img/rick.png";
         }
     }
 })();
