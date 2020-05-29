@@ -5,6 +5,7 @@
 
     function init() {
         document.getElementById("find-more-container").addEventListener("click", toResume);
+        document.querySelector("header").addEventListener("click", tiltHeader);
         id("about-website").addEventListener("click", toAboutWebsite);
         document.getElementById("image-container").addEventListener("click", startRoll);
     }
@@ -109,6 +110,29 @@
         document.body.style.OTransitionDuration='3s';
         document.body.style.OTransitionProperty='all';
         setTimeout(reset, 3000);
+    }
+
+    let headerClickCount = 0;
+    function tiltHeader() {
+        if (headerClickCount === 0) {
+            document.querySelector("header").style.WebkitTransform='rotate(30deg)';
+            document.querySelector("header").style.WebkitTransitionDuration = '0.5s'
+            document.querySelector("header").style.WebkitTransitionProperty='all';
+        } else if (headerClickCount === 1) {
+            document.querySelector("header").style.WebkitTransform='rotate(-30deg)';
+            document.querySelector("header").style.WebkitTransitionDuration = '0.5s'
+            document.querySelector("header").style.WebkitTransitionProperty='all';
+        } else {
+            document.querySelector("header").style.WebkitTransform='rotate(360deg)';
+            document.querySelector("header").style.WebkitTransitionDuration = '0.5s'
+            document.querySelector("header").style.WebkitTransitionProperty='all';
+        }
+        
+        if (headerClickCount === 2) {
+            headerClickCount  = 0;
+        } else {
+            headerClickCount++;
+        }
     }
 
     function reset() {
