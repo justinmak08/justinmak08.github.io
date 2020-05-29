@@ -20,6 +20,10 @@ h1 {
     transition: all 0.3s ease;
 }
 
+img {
+    transition: all 0.8s ease;
+}
+
 h2, #find-more-container:hover, #resume-container div:hover {
     color: #159957;
 }
@@ -51,6 +55,11 @@ img {
     max-height: auto;
 }
 
+#image-container {
+    transform: scale(1);
+    overflow: hidden;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -71,12 +80,16 @@ img {
     padding: 10px;
 }
 
-#introduction-container, #find-more-container, #about-website-container, #resume-container div, header, img, #category-container div {
+#introduction-container, #find-more-container, #about-website-container, #resume-container div, header, #image-container, #category-container div {
     border-radius: 10px;
 }
 
 #about-container h2, #find-more-container, #resume-container, header, footer {
     text-align: center;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
 
 @keyframes fromWhite {
