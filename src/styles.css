@@ -65,15 +65,17 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 #introduction-container {
-    width: 54%;
+    width: 60%;
+    margin-right: 5px;
 }
 
 #image-container {
-    width: 42%;
+    width: 40%;
+    margin-left: 5px;
 }
 
 #introduction-container, #find-more-container, #about-website-container, #resume-container div, #category-container div {
