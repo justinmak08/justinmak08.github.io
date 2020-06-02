@@ -139,25 +139,33 @@ img:active {
 }
 
 #resume-container div {
-    width: 30%;
-    height: 230px;
-    line-height: 230px;
-    color: #741cc7;
+    width: 20vw;
+    height: 20vw;
+    color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-origin: content-box;
+    display: table;
 }
 
 #resume-container div strong {
+    display: table-cell;
+    vertical-align: middle;
     font-size: 30pt;
+    font-weight: 900;
 }
 
 @keyframes fromPurpleText {
-    from {color: #741cc7}
+    from {color: #741cc7;}
+}
+
+@keyframes fromBlackText {
+    from {color: black;}
 }
 
 #resume-container div:hover {
-    animation-name: fromPurpleText;
+    animation-name: fromBlackText;
     transform: translate(0, -7px);
 }
 
@@ -182,7 +190,7 @@ img:active {
 }
 
 #work {
-    background-image: url("img/work.jpg");
+    background-image: url("img/work.png");
 }
 
 #volunteer {
@@ -220,12 +228,6 @@ img:active {
     #introduction-container, #image-container {
         margin-top: 15px;
         margin-bottom: 15px;
-    }
-
-    #resume-container div {
-        width: 40%;
-        height: 100px;
-        line-height: 100px;
     }
 
     #resume-container div strong {
